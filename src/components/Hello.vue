@@ -36,11 +36,13 @@
         <v-list-tile
           v-for="item in items"
           :key="item.title"
-          @click=""
+          @click="mini"
         >
+         <router-link to="/addpackage">
           <v-list-tile-action>
-            <v-icon>{{ item.icon }}</v-icon>
+          <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
+          </router-link>
 
           <v-list-tile-content>
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
